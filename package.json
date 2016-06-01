@@ -1,0 +1,33 @@
+{
+  "name": "react-gradient-view",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --progress --colors --optimize-minimize --config webpack.config.js --port 8080 --host 0.0.0.0 --content-base ./",
+    "build": "webpack --progress -p"
+  },
+  "keywords": [
+    "react-component",
+    "component",
+    "react",
+    "gradient",
+    "view",
+    "colors"
+  ],
+  "author": "Hetmann W. Iohan",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
