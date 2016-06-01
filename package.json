@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --progress --colors --optimize-minimize --config webpack.config.js --port 8080 --host 0.0.0.0 --content-base ./",
-    "build": "webpack --progress -p"
+    "dev": "webpack-dev-server --hot --progress --colors --optimize-minimize --config build/webpack.demo.config.js --port 8080 --host 0.0.0.0 --content-base ./demo",
+    "demo": "webpack --progress -p --config build/webpack.demo.config.js",
+    "build": "webpack --progress -p --config build/webpack.config.js"
   },
   "keywords": [
     "react-component",
@@ -18,6 +19,7 @@
   "author": "Hetmann W. Iohan",
   "license": "ISC",
   "dependencies": {
+    "detect-browser": "^1.3.3",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },

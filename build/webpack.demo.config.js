@@ -4,12 +4,13 @@ var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
 module.exports = {
   entry: {
-    'gradient': path.resolve(__dirname, '../src/gradient.jsx')
+    'gradient': path.resolve(__dirname, '../demo/demo.jsx')
   },
   output: {
-    path: path.resolve(__dirname, '../lib'),
-    filename: '[name].js',
+    path: path.resolve(__dirname, './demo'),
+    filename: 'demo.js',
     sourceMapFilename: "[file].map",
+    publicPath: '/demo/'
   },
   module: {
     loaders: [
@@ -38,7 +39,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('production')
+        'NODE_ENV': JSON.stringify('development')
       }
     })
   ],
