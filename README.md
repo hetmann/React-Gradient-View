@@ -11,5 +11,3 @@ import Gradient from 'react-gradient-view';
 <Gradient speed={10}>
 	You app text / components
 </Gradient>
-
-![screenshot](https://raw.githubusercontent.com/hetmann/React-Gradient-View/master/screenshot.png)
