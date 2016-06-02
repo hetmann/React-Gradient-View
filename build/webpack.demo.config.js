@@ -7,7 +7,7 @@ module.exports = {
     'gradient': path.resolve(__dirname, '../demo/demo.jsx')
   },
   output: {
-    path: path.resolve(__dirname, './demo'),
+    path: path.resolve(__dirname, '../demo'),
     filename: 'demo.js',
     sourceMapFilename: "[file].map",
     publicPath: '/demo/'
