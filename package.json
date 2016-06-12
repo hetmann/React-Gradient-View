@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --progress --colors --optimize-minimize --config build/webpack.demo.config.js --port 8080 --host 0.0.0.0 --content-base ./demo",
+    "dev": "webpack-dev-server --hot --progress --colors --config build/webpack.demo.config.js --port 8080 --host 0.0.0.0 --content-base ./demo",
     "demo": "webpack --progress -p --config build/webpack.demo.config.js",
     "build": "webpack --progress -p --config build/webpack.config.js"
   },

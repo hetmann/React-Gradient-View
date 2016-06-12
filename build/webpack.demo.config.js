@@ -22,6 +22,10 @@ module.exports = {
           plugins: ['transform-runtime'],
           cacheDirectory: true
         }
+      },
+      {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader'
       }
     ]
   },
